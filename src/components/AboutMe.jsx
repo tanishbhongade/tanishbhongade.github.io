@@ -10,9 +10,9 @@ import styles from "./AboutMe.module.css";
 
 const educationData = [
   {
-    date: "2011 - 2021",
-    title: "SSC",
-    institution: "Great Britain High School, Shantinagar, Nagpur",
+    date: "2023 - Present",
+    title: "BTech. in Information Technology",
+    institution: "Walchand College of Engineering, Sangli",
   },
   {
     date: "2021 - 2023",
@@ -20,9 +20,9 @@ const educationData = [
     institution: "Taywade Junior College, Koradi, Nagpur",
   },
   {
-    date: "2023 - 2027",
-    title: "BTech. in Information Technology",
-    institution: "Walchand College of Engineering, Sangli",
+    date: "2011 - 2021",
+    title: "SSC",
+    institution: "Great Britain High School, Shantinagar, Nagpur",
   },
 ];
 

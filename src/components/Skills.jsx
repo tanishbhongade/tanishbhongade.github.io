@@ -2,12 +2,17 @@ import React from "react";
 import { Box, Grid, Card, CardContent, Typography } from "@mui/material";
 
 const skills = [
-  { title: "ReactJS", logo: "/logos/reactjs.png" },
+  { title: "React.js", logo: "/logos/reactjs.png" },
+  { title: "Node.js", logo: "/logos/node.png" },
+  { title: "Express.js", logo: "/logos/expressjs.png" },
+  { title: "MongoDB", logo: "/logos/mongodb.png" },
   { title: "JavaScript", logo: "/logos/js.png" },
   { title: "Linux", logo: "/logos/linux.png" },
-  { title: "Python", logo: "/logos/python.png" },
   { title: "Docker", logo: "/logos/docker.png" },
   { title: "Git", logo: "/logos/git.png" },
+  { title: "MySQL", logo: "/logos/mysql.png" },
+  { title: "Python", logo: "/logos/python.png" },
+  { title: "C++", logo: "/logos/cpp.png" },
 ];
 
 function Skills() {
@@ -68,7 +73,14 @@ function Skills() {
       <Typography
         variant="h4"
         align="center"
-        sx={{ mb: 4, fontFamily: "Domine", color: "white", mt: 4, fontSize: 20, fontStyle: "italic" }}
+        sx={{
+          mb: 4,
+          fontFamily: "Domine",
+          color: "white",
+          mt: 4,
+          fontSize: 20,
+          fontStyle: "italic",
+        }}
       >
         and learning more...
       </Typography>

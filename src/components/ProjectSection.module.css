@@ -1,27 +1,9 @@
-.masonryGrid {
-    display: flex;
-    margin-left: -16px;
-    width: auto;
-}
-
-.masonryColumn {
-    padding-left: 16px;
-    background-clip: padding-box;
-}
-
 .box {
     margin: 10px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.loaderContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
+    font-family: "Domine", serif;
 }
 
 .spinner {
@@ -32,10 +14,4 @@
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin-bottom: 16px;
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
 }

@@ -1,25 +1,32 @@
+import { useState, useEffect } from "react";
 import styles from "./ProjectTile.module.css";
 
 function ProjectTile({ project }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className={styles.projecttile}>
-      <p className={styles.projectheading}>{project.name}</p>
+    <div
+      className={styles.tile}
+      style={{ backgroundImage: `url(${project.image})` }}
+    >
+      <div className={styles.overlay}>
+        <h2 className={styles.title}>{project.name}</h2>
 
-      <div className={styles.githublinkcontainer}>
-        <h3>
-          <a href={project.link} className={styles.githublink}>
-            GitHub/Article
-          </a>
-        </h3>
-        <img
-          src="/image.png"
-          width={`20px`}
-          onClick={() => window.open(project.link)}
-          style={{ cursor: "pointer" }}
-        />
+        {!isMobile && project.shortDescription && (
+          <p className={styles.description}>{project.shortDescription}</p>
+        )}
+
+        <a href={project.link} className={styles.button}>
+          View Project
+        </a>
       </div>
-
-      <p className={styles.shortDescription}>{project.shortDescription}</p>
     </div>
   );
 }

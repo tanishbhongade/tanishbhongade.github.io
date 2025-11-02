@@ -6,7 +6,7 @@ import { RingLoader } from "react-spinners";
 function Projects() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000); // 0.5 sec
+    const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
   return (
