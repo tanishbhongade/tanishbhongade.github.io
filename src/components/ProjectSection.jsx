@@ -4,7 +4,7 @@ import ProjectTile from "./ProjectTile";
 const projects = [
   {
     name: "Distributed CTF Management System",
-    link: "https://medium.com/@tanishbhongade/distributed-ctf-management-system-47395c842f37",
+    link: "https://github.com/tanishbhongade/ctf-mgmt-system",
     shortDescription: "A distributed CTF management system written in MERN",
     image: "/images/ctf-image.jpg"
   },
