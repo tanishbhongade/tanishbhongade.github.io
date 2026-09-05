@@ -20,22 +20,6 @@ function SocialMedia() {
       >
         <FaLinkedin />
       </a>
-      <a
-        href="https://www.instagram.com/tanishbhongade"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Instagram"
-      >
-        <FaInstagram />
-      </a>
-      <a
-        href="https://twitter.com/tanishbhongade"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Twitter"
-      >
-        <FaTwitter />
-      </a>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaGraduationCap } from "react-icons/fa";
+import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 
 import styles from "./AboutMe.module.css";
 
@@ -26,6 +26,14 @@ const educationData = [
   },
 ];
 
+const experienceData = [
+  {
+    date: "June 2026 - July 2026",
+    title: "Software Engineering Intern",
+    company: "Siemens Digital Industries Software, Pune",
+  },
+];
+
 function AboutMe() {
   return (
     <div>
@@ -35,6 +43,36 @@ function AboutMe() {
           style={{
             textAlign: "center",
             marginBottom: "2rem",
+            fontFamily: "Domine",
+            color: "white",
+          }}
+        >
+          Experiences
+        </h2>
+        <VerticalTimeline>
+          {experienceData.map((exp, i) => (
+            <VerticalTimelineElement
+              key={i}
+              date={exp.date}
+              dateClassName={styles.timelinedate}
+              iconStyle={{ background: "#007bff", color: "#fff" }}
+              icon={<FaBriefcase />}
+            >
+              <h3 className="vertical-timeline-element-title">{exp.title}</h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                {exp.company}
+              </h4>
+            </VerticalTimelineElement>
+          ))}
+        </VerticalTimeline>
+      </div>
+
+      <div>
+        <h2
+          style={{
+            textAlign: "center",
+            marginBottom: "2rem",
+            marginTop: "5rem",
             fontFamily: "Domine",
             color: "white",
           }}

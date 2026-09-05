@@ -2,8 +2,16 @@
     color: #ffffff;
 }
 
+.timelineSection+.timelineSection {
+    margin-top: 5rem;
+}
+
 @media screen and (max-width: 768px) {
     .timelinedate {
         color: #222;
+    }
+
+    .timelineSection+.timelineSection {
+        margin-top: 4rem;
     }
 }
