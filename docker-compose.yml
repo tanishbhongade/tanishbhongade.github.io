@@ -1,0 +1,19 @@
+services:
+  portfolio:
+    image: tanishbhongade/portfolio:latest
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: portfolio
+
+    restart: unless-stopped
+
+    ports:
+      - "80:80"
+      - "443:443"
+
+    volumes:
+      - /etc/nginx/ssl/cert.pem:/etc/nginx/ssl/cert.pem:ro
+      - /etc/nginx/ssl/key.pem:/etc/nginx/ssl/key.pem:ro
